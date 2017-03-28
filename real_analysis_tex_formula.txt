@@ -166,7 +166,7 @@ f^{-1}(S) = \{x\in A: f(x) \in S\}
 C, D \subseteq A
 f(C \cap D) \subseteq f(C) \cap f(D)
 E, F \subseteq B
-f^{-1}(E \cap F) \subseteq f^{-1}(E) \cap f^{-1}(F)
+f^{-1}(E \cap F) = f^{-1}(E) \cap f^{-1}(F)
 
 f: A\rightarrow B, g: B\rightarrow C
 S\subseteq C

@@ -11752,7 +11752,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Limit-superiors-and-limit-inferiors-of-a-sequence-of-real-numbers">Limit superiors and limit inferiors of a sequence of real numbers<a class="anchor-link" href="#Limit-superiors-and-limit-inferiors-of-a-sequence-of-real-numbers">&#182;</a></h1><p>There are three alternative definitions of <strong>limit superiors</strong> ($\limsup x_n$) and <strong>limit inferiors</strong> ($\liminf x_n$).</p>
-<p>First, let us list a few definitions and theorems.</p>
+<p>First, let us list a few definitions and theorems. The numbering of theorems, definitions and chapters is referring to <u>Introduction to Real Analysis by **Michael J. Schramm**</u>.</p>
 <p><u>DEFINITION 10.7 (**Sequential cluster points**)</u>:<br>
 A point c is a sequential cluster point of $(x_n)$ if $\{n: x_n\in(c-\epsilon,c+\epsilon)\}$ is infinite for each $\epsilon>0$.</p>
 <p><u>THEOREM 10.8 (**Sequential cluster points**)</u>:<br>
@@ -11854,6 +11854,25 @@ So the limit supremum is contained in all subsets which are upper bounds for all
 <li>$\limsup X_n$ consists of elements of $X$ which belong to $X_n$ for infinitely many $n$ (i.e. countably infinite). That is, $x \in \limsup X_n$ if and only if there exists a subsequence $(X_{n_k})$ of $(X_n)$ such that $x \in X_{n_k}$ for all k.</li>
 <li>$\liminf X_n$ consists of elements of $X$ which belong to $X_n$ for all except finitely many $n$ (i.e. for cofinitely many $n$). That is, $x \in \liminf X_n$ if and only if there exists some $m>0$ such that $x \in X_n$ for all $n>m$.</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="In-the-view-of-Dedekind-Cuts">In the view of Dedekind Cuts<a class="anchor-link" href="#In-the-view-of-Dedekind-Cuts">&#182;</a></h1><p>Is there any deeper connection between the $\limsup$ and $\liminf$ of a sequence of numbers and a sequence of sets? There is! <strong>Dedekind cuts</strong> draw a connection between real numbers and sets of retional numbers. In the view of <strong>the cuts</strong>, the two concepts above are the same thing.</p>
+<p><u>DEFINITION 22.1 (**Dedekind Cuts**):</u><br>
+A subset $C$ of $\mathbb{Q}$ is called a <strong>Dedekind Cuts</strong> if:</p>
+<ol>
+<li>$C\ne\mathbb{Q}$ and $C\ne\emptyset$.</li>
+<li>for $p,q \in \mathbb{Q}$, if $p\in C$ and $q<p$, then $q\in C$.</li>
+<li>if $p\in C$, there is a $q\in\mathbb{Q}\ni q\in C$.</li>
+</ol>
+<p>In words, a Dedekind cut is a partition of rational numbers into two parts where the <strong>lower part</strong> does not have the <strong>greatest element</strong>. If the complement of $C$ has a least element, then the cut is a <strong>rational cut</strong>. <u>Chapter 22</u> is dedicated to the proof of Dedekind cuts forming an ordered field and having the <strong>Least Upper Bound</strong> property, which makes it a <strong>Dedekind complete</strong> ordered field. All Dedekind complete ordered fields are <strong>isomorphic</strong> to real numbers.</p>
+<p>Now, one can see that the $\limsup$ and $\liminf$ of real numbers are $\limsup$ and $\liminf$ of Dedekind cuts, which are $\limsup$ and $\liminf$ of sets indeed.</p>
 
 </div>
 </div>
